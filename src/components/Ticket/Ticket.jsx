@@ -1,14 +1,17 @@
 import React from "react";
+import "./Ticket.css";
 import team from "../../team";
+import Counter from "../Counter";
 
 const Ticket = () => {
   return (
-    <div>
+    <div className="ticketContainer">
       {team.map((employee) => {
         return (
-          <div>
-            <h2>{employee.Name}</h2>
-            <h2>{employee.Role}</h2>
+          <div className="ticketFront">
+            <h2>{employee.name}</h2>
+            <p>{employee.role}</p>
+            <Counter />
           </div>
         );
       })}

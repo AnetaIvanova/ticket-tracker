@@ -1,0 +1,13 @@
+.ticketContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.ticketFront {
+  height: 250px;
+  width: 200px;
+  display: grid;
+  background-color: lightskyblue;
+  border: 2px solid black;
+}
